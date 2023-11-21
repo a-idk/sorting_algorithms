@@ -15,7 +15,7 @@ void counting_sort(int *array, size_t size)
 {
 	/* variable declaration */
 	size_t idx1;
-	int idx2, max; 
+	int idx2, max;
 	int *array_num, *array_tmp;
 
 	/* check for array validity and more than 1 element */
