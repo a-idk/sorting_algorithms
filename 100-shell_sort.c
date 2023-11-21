@@ -32,12 +32,21 @@ void shell_sort(int *array, size_t size)
 	{
 		for (idx1 = gp; idx1 < size; idx1 += 1)
 		{
+<<<<<<< HEAD
 			sw = array[idx1];
 			for (idx2 = idx1; idx2 >= gp && array[idx2 - gp] > sw; idx2 -= gp)
 				array[idx2] = array[idx2 - gp];
 			array[idx2] = sw;
 		}
 		print_array(array, size);
+=======
+			for (idx2 = idx1; idx2 >= gp && array[idx2] < array[idx2 - gp]; idx2 -= gp)
+			{
+				sw = array[idx2], array[idx2] = array[idx2 - gp];
+				array[idx2 - gp] = sw, print_array(array, size);
+			}
+		}
+>>>>>>> 4f1a226fb74cf96f7e6aec9efd87e92d9a8a9943
 		gp = gp / 3;
 	}
 }
