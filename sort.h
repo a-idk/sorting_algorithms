@@ -34,6 +34,7 @@ void quick_sort(int *array, size_t size);
 
 /* ADVANCED PROTOTYPES */
 void shell_sort(int *array, size_t size);
+void swapping2(listint_t **nd, listint_t **lst);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
