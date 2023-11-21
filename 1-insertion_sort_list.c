@@ -17,7 +17,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *tnd;  /* temporary node */
 
 	if (list == NULL || *list == NULL)
-        return;
+		return;
 	if ((*list)->next == NULL)
 		return;
 	node = *list;
