@@ -22,7 +22,7 @@ void bubble_sort(int *array, size_t size)
 	if (size < 2)
 		return;
 	if (!array || size == 0)
-        return;
+		return;
 	check = 0;
 	/* main loop */
 	while (check == 0)
