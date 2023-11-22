@@ -78,8 +78,8 @@ void merging_func(int *part1, int *temp, int f_elems, int center, int l_elem)
 		part1[idx] = rt_arr[rt];
 		rt = rt + 1, idx = idx + 1;
 	}
-	printf("Merging...\n"), printf("[lt]: "), print_array(lt_arr, lt);
-	printf("[rt]: "), print_array(rt_arr, rt), printf("[Done]: ");
+	printf("Merging...\n"), printf("[left]: "), print_array(lt_arr, lt);
+	printf("[right]: "), print_array(rt_arr, rt), printf("[Done]: ");
 	print_array(&part1[f_elems], lt + rt);
 }
 
