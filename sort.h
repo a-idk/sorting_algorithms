@@ -41,6 +41,7 @@ void *mycalloc(unsigned int elems, unsigned int size);
 void merging_func(int *part1, int *temp, int f_elems, int center, int l_elem);
 void sorts_array(int *ar, int *temp, int f_el, int l_el);
 void merge_sort(int *array, size_t size);
+void _swift(int *arr, size_t init, size_t size, size_t idx);
 void heap_sort(int *array, size_t size);
 void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
