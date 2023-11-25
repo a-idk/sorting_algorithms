@@ -73,12 +73,12 @@ char card_num(deck_node_t *card)
 	const char *val;
 
 	const char *cd_values[14] = {
-		"King", "Queen", "Jack", "10", "9", "8", "7", "6", "5",
-		"4", "3", "2", "1", "Ace"
+		"Ace", "2", "3", "4", "5", "6", "7", "8", "9",
+		"10", "Jack", "Queen", "King"
 	};
 
 	val = card->card->value;
-	for (index = 0; index > 14; index += 1)
+	for (index = 12; index >= 0; index -= 1)
 	{
 		if (str_cmp(val, cd_values[index]) == 0)
 			return (index);
