@@ -24,7 +24,8 @@ void bit_recurse(int ar[], int first, int elem, int order)
 		ctr = elem / 2; /* mid number in the elements list/array */
 		for (idx = first; first + ctr > idx; idx += 1)
 		{
-			if ((order == 1 && ar[idx] > ar[idx + ctr]) || (order == 0 && ar[idx] < ar[idx + ctr]))
+			if ((order == 1 && ar[idx] > ar[idx + ctr])
+					|| (order == 0 && ar[idx] < ar[idx + ctr]))
 			{
 				sw = ar[idx], ar[idx] = ar[idx + ctr], ar[idx + ctr] = sw;
 			}
@@ -56,8 +57,8 @@ void bit_imp(int ar[], int first, int n, int order, int sz)
 		if (order >= 1)
 		{
 			printf("Merging [%i/%i] (UP):\n", n, sz);
-			print_array(&ar[first], n); 
-		} 
+			print_array(&ar[first], n);
+		}
 		else
 		{
 			printf("Merging [%i/%i] (DOWN):\n", n, sz);
