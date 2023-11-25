@@ -78,7 +78,7 @@ char card_num(deck_node_t *card)
 	};
 
 	val = card->card->value;
-	for (index = 13; index >= 0; index -= 1)
+	for (index = 0; index > 14; index += 1)
 	{
 		if (str_cmp(val, cd_values[index]) == 0)
 			return (index);
