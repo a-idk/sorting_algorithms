@@ -4,6 +4,9 @@
 /* STANDARD LIBRARIES */
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <stddef.h>
+#include <stdbool.h>
 
 /* DEFINED DATA STRUCTURE */
 /**
@@ -46,6 +49,8 @@ void heap_sort(int *array, size_t size);
 int maxVal(int *array, int size);
 void sorting(int *array, size_t size, int ex, int *temp);
 void radix_sort(int *array, size_t size);
+void bit_recurse(int ar[], int first, int elem, int order);
+void bit_imp(int ar[], int first, int n, int order, int sz);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
