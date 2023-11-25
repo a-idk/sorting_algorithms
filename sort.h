@@ -54,4 +54,4 @@ void bit_imp(int ar[], int first, int n, int order, int sz);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
-#endif /* sort.h */
+#endif /* "sort.h" */
